@@ -220,24 +220,45 @@ const Index = () => {
                 </p>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-6 mb-12">
+              <div className="grid md:grid-cols-3 gap-6 mb-12">
                 <Card className="border-2 border-primary/20 hover:border-primary transition-colors">
-                  <CardContent className="p-8">
-                    <div className="flex items-center gap-3 mb-6">
-                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                        <Icon name="CreditCard" size={24} className="text-primary" />
+                  <CardContent className="p-6">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                        <Icon name="QrCode" size={20} className="text-primary" />
                       </div>
-                      <h3 className="text-xl font-bold">Банковский перевод</h3>
+                      <h3 className="text-lg font-bold">Быстрая оплата</h3>
+                    </div>
+                    <div className="flex flex-col items-center py-4">
+                      <img 
+                        src="https://cdn.poehali.dev/files/80b25f34-2c45-4184-ac05-8d3d7e34eb05.jpeg"
+                        alt="QR код для оплаты"
+                        className="w-48 h-48 rounded-xl shadow-lg mb-4 bg-white p-2"
+                      />
+                      <p className="text-sm text-center text-muted-foreground">
+                        Отсканируйте QR-код камерой телефона для быстрой оплаты
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-2 border-primary/20 hover:border-primary transition-colors">
+                  <CardContent className="p-6">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                        <Icon name="CreditCard" size={20} className="text-primary" />
+                      </div>
+                      <h3 className="text-lg font-bold">Банковский перевод</h3>
                     </div>
                     <div className="space-y-3 text-sm">
                       <div>
                         <div className="text-muted-foreground text-xs mb-1">Получатель</div>
-                        <div className="font-medium">БЛАГОТВОРИТЕЛЬНЫЙ ФОНД "ВРЕМЯ ПРИШЛО"</div>
+                        <div className="font-medium">БФ "ВРЕМЯ ПРИШЛО"</div>
                       </div>
                       <Separator />
                       <div>
                         <div className="text-muted-foreground text-xs mb-1">Номер счёта</div>
-                        <div className="font-mono font-medium">40703810781240000002</div>
+                        <div className="font-mono text-xs font-medium">40703810781240000002</div>
                       </div>
                       <div>
                         <div className="text-muted-foreground text-xs mb-1">Банк</div>
@@ -249,43 +270,39 @@ const Index = () => {
                           <div className="font-mono text-xs font-medium">044525593</div>
                         </div>
                         <div>
-                          <div className="text-muted-foreground text-xs mb-1">Корр. счёт</div>
-                          <div className="font-mono text-xs font-medium">30101810200000000593</div>
+                          <div className="text-muted-foreground text-xs mb-1">ИНН</div>
+                          <div className="font-mono text-xs font-medium">9723258826</div>
                         </div>
-                      </div>
-                      <div>
-                        <div className="text-muted-foreground text-xs mb-1">ИНН банка</div>
-                        <div className="font-mono text-xs font-medium">7728168971</div>
                       </div>
                     </div>
                   </CardContent>
                 </Card>
 
                 <Card className="border-2 border-secondary/20 hover:border-secondary transition-colors">
-                  <CardContent className="p-8">
-                    <div className="flex items-center gap-3 mb-6">
-                      <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center">
-                        <Icon name="Smartphone" size={24} className="text-secondary" />
+                  <CardContent className="p-6">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-10 h-10 bg-secondary/10 rounded-lg flex items-center justify-center">
+                        <Icon name="Smartphone" size={20} className="text-secondary" />
                       </div>
-                      <h3 className="text-xl font-bold">Другие способы</h3>
+                      <h3 className="text-lg font-bold">Другие способы</h3>
                     </div>
-                    <div className="space-y-4">
-                      <Button className="w-full bg-secondary hover:bg-secondary/90" size="lg">
-                        <Icon name="CreditCard" size={20} className="mr-2" />
+                    <div className="space-y-3">
+                      <Button className="w-full bg-secondary hover:bg-secondary/90">
+                        <Icon name="CreditCard" size={18} className="mr-2" />
                         Перевод по СБП
                       </Button>
-                      <Button variant="outline" className="w-full" size="lg">
-                        <Icon name="Wallet" size={20} className="mr-2" />
+                      <Button variant="outline" className="w-full">
+                        <Icon name="Wallet" size={18} className="mr-2" />
                         Электронные кошельки
                       </Button>
-                      <Button variant="outline" className="w-full" size="lg">
-                        <Icon name="Building" size={20} className="mr-2" />
+                      <Button variant="outline" className="w-full">
+                        <Icon name="Building" size={18} className="mr-2" />
                         Юридические лица
                       </Button>
                     </div>
-                    <div className="mt-6 p-4 bg-muted/50 rounded-lg">
+                    <div className="mt-4 p-3 bg-muted/50 rounded-lg">
                       <p className="text-xs text-muted-foreground">
-                        Все средства направляются на закупку снаряжения, медикаментов и оказание помощи участникам СВО
+                        Все средства направляются на помощь участникам СВО
                       </p>
                     </div>
                   </CardContent>
