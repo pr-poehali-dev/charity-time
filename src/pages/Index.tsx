@@ -15,7 +15,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b shadow-sm">
+      <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b shadow-sm">
         <nav className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
@@ -23,7 +23,7 @@ const Index = () => {
                 <Icon name="Heart" size={24} className="text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-accent">ВРЕМЯ ПРИШЛО</h1>
+                <h1 className="text-xl font-bold text-foreground">ВРЕМЯ ПРИШЛО</h1>
                 <p className="text-xs text-muted-foreground">Благотворительный фонд</p>
               </div>
             </div>
@@ -42,11 +42,11 @@ const Index = () => {
       </header>
 
       <main>
-        <section id="main" className="relative min-h-[90vh] flex items-center bg-gradient-to-b from-primary/5 to-white">
+        <section id="main" className="relative min-h-[90vh] flex items-center bg-gradient-to-b from-primary/10 to-background">
           <div className="container mx-auto px-4 py-20">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="space-y-6 animate-fade-in">
-                <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm">
+                <div className="inline-flex items-center gap-2 bg-card px-4 py-2 rounded-full shadow-sm border border-border">
                   <div className="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
                   <span className="text-sm font-medium">Помогаем защитникам</span>
                 </div>
@@ -91,7 +91,7 @@ const Index = () => {
                   alt="Поддержка защитников" 
                   className="rounded-2xl shadow-2xl"
                 />
-                <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl">
+                <div className="absolute -bottom-6 -left-6 bg-card p-6 rounded-xl shadow-xl border border-border">
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
                       <Icon name="Shield" size={24} className="text-white" />
@@ -107,7 +107,7 @@ const Index = () => {
           </div>
         </section>
 
-        <section id="help" className="py-20 bg-white">
+        <section id="help" className="py-20 bg-background">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16 animate-fade-in">
               <h2 className="text-4xl font-bold mb-4">Направления нашей помощи</h2>
@@ -159,7 +159,7 @@ const Index = () => {
           </div>
         </section>
 
-        <section id="about" className="py-20 bg-gradient-to-b from-primary/5 to-white">
+        <section id="about" className="py-20 bg-gradient-to-b from-primary/10 to-background">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="animate-fade-in">
@@ -186,7 +186,7 @@ const Index = () => {
                   </p>
                 </div>
                 
-                <div className="bg-white p-6 rounded-xl shadow-md space-y-3">
+                <div className="bg-card p-6 rounded-xl shadow-md space-y-3 border border-border">
                   <h3 className="font-bold text-lg flex items-center gap-2">
                     <Icon name="FileText" size={20} className="text-primary" />
                     Реквизиты фонда
@@ -212,7 +212,7 @@ const Index = () => {
           </div>
         </section>
 
-        <section id="support" className="py-20 bg-white">
+        <section id="support" className="py-20 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-12 animate-fade-in">
@@ -306,7 +306,7 @@ const Index = () => {
           </div>
         </section>
 
-        <section id="contacts" className="py-20 bg-gradient-to-b from-muted/30 to-white">
+        <section id="contacts" className="py-20 bg-gradient-to-b from-muted/30 to-background">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto">
               <div className="text-center mb-12 animate-fade-in">
@@ -392,7 +392,7 @@ const Index = () => {
         </section>
       </main>
 
-      <footer className="bg-accent text-white py-12">
+      <footer className="bg-muted text-foreground py-12 border-t border-border">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
@@ -402,10 +402,10 @@ const Index = () => {
                 </div>
                 <div>
                   <div className="font-bold text-lg">ВРЕМЯ ПРИШЛО</div>
-                  <div className="text-xs text-white/70">Благотворительный фонд</div>
+                  <div className="text-xs text-muted-foreground">Благотворительный фонд</div>
                 </div>
               </div>
-              <p className="text-sm text-white/70">
+              <p className="text-sm text-muted-foreground">
                 Помогаем защитникам Родины. Каждый день. Вместе.
               </p>
             </div>
@@ -413,16 +413,16 @@ const Index = () => {
             <div>
               <h4 className="font-bold mb-4">Быстрые ссылки</h4>
               <div className="space-y-2 text-sm">
-                <button onClick={() => scrollToSection('help')} className="block text-white/70 hover:text-white transition-colors">Наша помощь</button>
-                <button onClick={() => scrollToSection('about')} className="block text-white/70 hover:text-white transition-colors">О фонде</button>
-                <button onClick={() => scrollToSection('support')} className="block text-white/70 hover:text-white transition-colors">Как поддержать</button>
-                <button onClick={() => scrollToSection('contacts')} className="block text-white/70 hover:text-white transition-colors">Контакты</button>
+                <button onClick={() => scrollToSection('help')} className="block text-muted-foreground hover:text-foreground transition-colors">Наша помощь</button>
+                <button onClick={() => scrollToSection('about')} className="block text-muted-foreground hover:text-foreground transition-colors">О фонде</button>
+                <button onClick={() => scrollToSection('support')} className="block text-muted-foreground hover:text-foreground transition-colors">Как поддержать</button>
+                <button onClick={() => scrollToSection('contacts')} className="block text-muted-foreground hover:text-foreground transition-colors">Контакты</button>
               </div>
             </div>
 
             <div>
               <h4 className="font-bold mb-4">Контакты</h4>
-              <div className="space-y-2 text-sm text-white/70">
+              <div className="space-y-2 text-sm text-muted-foreground">
                 <div>ИНН: 9723258826</div>
                 <div>info@vremyaprishlo.ru</div>
                 <div>+7 (495) 123-45-67</div>
@@ -430,9 +430,9 @@ const Index = () => {
             </div>
           </div>
           
-          <Separator className="bg-white/20 mb-8" />
+          <Separator className="bg-border mb-8" />
           
-          <div className="text-center text-sm text-white/70">
+          <div className="text-center text-sm text-muted-foreground">
             © 2024 Благотворительный фонд "ВРЕМЯ ПРИШЛО". Все права защищены.
           </div>
         </div>
