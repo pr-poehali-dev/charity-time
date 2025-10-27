@@ -85,7 +85,7 @@ const Index = () => {
               </div>
               <div className="relative animate-scale-in">
                 <img 
-                  src="https://cdn.poehali.dev/projects/9bacb59a-adf9-4749-84e2-3a5cece91c83/files/9ac1b9e5-2301-4367-b291-b2a53360c76e.jpg" 
+                  src="https://cdn.poehali.dev/files/d5063686-551e-46ea-bdc1-9ac9ec8fc094.jpeg" 
                   alt="Поддержка защитников" 
                   className="rounded-2xl shadow-2xl"
                 />
@@ -149,7 +149,7 @@ const Index = () => {
 
             <div className="mt-16 bg-gradient-to-r from-primary/10 via-white to-secondary/10 rounded-2xl p-8">
               <img 
-                src="https://cdn.poehali.dev/projects/9bacb59a-adf9-4749-84e2-3a5cece91c83/files/18c6a86f-4c4e-4d71-beff-6ffc5a7abe47.jpg"
+                src="https://cdn.poehali.dev/files/136b82cb-bc79-47e0-9f9d-054aa65bbe5d.jpeg"
                 alt="Наша помощь"
                 className="w-full rounded-xl shadow-lg"
               />
@@ -162,7 +162,7 @@ const Index = () => {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="animate-fade-in">
                 <img 
-                  src="https://cdn.poehali.dev/projects/9bacb59a-adf9-4749-84e2-3a5cece91c83/files/8e10799b-88bb-4466-833e-4d5b977c9d34.jpg"
+                  src="https://cdn.poehali.dev/files/89bcd69a-c64a-462e-a6de-fa991c52c4bb.jpeg"
                   alt="О фонде"
                   className="rounded-2xl shadow-2xl"
                 />
