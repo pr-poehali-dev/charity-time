@@ -19,13 +19,11 @@ const Index = () => {
         <nav className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-primary via-secondary to-primary rounded-lg flex items-center justify-center">
-                <Icon name="Heart" size={24} className="text-white" />
-              </div>
-              <div>
-                <h1 className="text-xl font-bold text-foreground">ВРЕМЯ ПРИШЛО</h1>
-                <p className="text-xs text-muted-foreground">Благотворительный фонд</p>
-              </div>
+              <img 
+                src="https://cdn.poehali.dev/files/338bdc14-08d8-46ee-b61f-db58c7ffe7b0.jpeg" 
+                alt="Время Пришло" 
+                className="h-12 w-auto"
+              />
             </div>
             <div className="hidden md:flex items-center gap-6">
               <button onClick={() => scrollToSection('main')} className="text-sm font-medium hover:text-primary transition-colors">Главная</button>
@@ -397,13 +395,11 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-gradient-to-br from-primary via-secondary to-primary rounded-lg flex items-center justify-center">
-                  <Icon name="Heart" size={24} className="text-white" />
-                </div>
-                <div>
-                  <div className="font-bold text-lg">ВРЕМЯ ПРИШЛО</div>
-                  <div className="text-xs text-muted-foreground">Благотворительный фонд</div>
-                </div>
+                <img 
+                  src="https://cdn.poehali.dev/files/338bdc14-08d8-46ee-b61f-db58c7ffe7b0.jpeg" 
+                  alt="Время Пришло" 
+                  className="h-12 w-auto"
+                />
               </div>
               <p className="text-sm text-muted-foreground">
                 Помогаем защитникам Родины. Каждый день. Вместе.
